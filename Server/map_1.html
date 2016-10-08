@@ -3,22 +3,27 @@
   <head>
     <title>Simple Map</title>
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="map_1.css"
+    <link rel="stylesheet" href="map_1.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
   </head>
   <body>
     <div id="map"></div>
-    <div id="top">
-     <form action = "http://127.0.0.1:8081/get_date_loc" method = "GET">
-         Day: <input type = "date" name = "date">
-         Localization: <input type = "text" name = "localization">
-         <input type = "submit" value = "Submit">
-      </form>
-      <form action = "http://127.0.0.1:8081/get_num" method = "GET">
-          Num: <input type = "number" name = "num">
+    <div id="frontlayer">
+      <div id="top" class="col-md-4 col-md-offset-2">
+        <form action = "http://127.0.0.1:8081/get_date_loc" method = "GET">
+          Day: <input type = "date" name = "date">
+          Localization: <input type = "text" name = "localization">
           <input type = "submit" value = "Submit">
-      </form>
+        </form>
+      </div>
+      <div id="bot"  class="col-md-3 col-md-offset-1">
+        <form action = "http://127.0.0.1:8081/get_num" method = "GET">
+            Num: <input type = "number" name = "num">
+            <input type = "submit" value = "Submit">
+        </form>
+      </div>
     </div>
     <script src="map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQwGT6uVFpwLcyJ1kmJFJzx6rL5uUMmYY&libraries=visualization&callback=initMap"

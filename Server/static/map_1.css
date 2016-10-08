@@ -2,19 +2,30 @@ html, body {
         height: 100%;
         margin: 0;
         padding: 0;
+        font-family: 'Roboto', sans-serif;
       }
       #map {
         height: 100%;
       }
-      #top{
+
+      #frontlayer{
+        
         position: absolute; 
-        top: 60px; 
-        left: 30px; 
-        width: 35%;
-        height: 8%;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        width: 100%;
+
+      }
+
+      #top{
         border: 0px;
         background: rgba(169, 169, 169, 0.3);
-        padding-top: 15px;
-        padding-left: 5px;
+        border-radius: 10px;
 
+      }
+      #bot{
+        border: 0px;
+        background: rgba(169, 169, 169, 0.3);
+        border-radius: 10px;
       }
