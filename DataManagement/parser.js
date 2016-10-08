@@ -118,5 +118,5 @@ function processRow(row){
 function saveRow(row){
     
     number_appends++;
-    fs.appendFileSync(FILE_PATH, row.join(";") + "\n");
+    fs.appendFileSync(FILE_PATH, row.join(",") + "\n");
 }
