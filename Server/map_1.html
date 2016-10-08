@@ -10,8 +10,11 @@
   <body>
     <div id="map"></div>
     <div id="top">
-
-        <p> YOLO </p>
+     <form action = "http://127.0.0.1:8081/process_get" method = "GET">
+         Day: <input type = "date" name = "date">
+         Localitzation: <input type = "text" name = "last_name">
+         <input type = "submit" value = "Submit">
+      </form>
 
     </div>
     <script src="map.js"></script>
