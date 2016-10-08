@@ -7,7 +7,7 @@ var app	= express();
 app.set("port", 8081);
 
 app.use("/", router);
-
+app.use(express.static("./static"));
 //
 app.listen(app.get("port"), function(err){
 	if(err) throw err;
