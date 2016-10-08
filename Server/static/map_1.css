@@ -10,7 +10,8 @@ html, body {
 
       #frontlayer{
         
-        position: absolute; 
+        position: absolute;
+        padding-top: 25px; 
         top: 0px;
         left: 0px;
         z-index: 10;
@@ -20,12 +21,17 @@ html, body {
 
       #top{
         border: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         background: rgba(169, 169, 169, 0.3);
         border-radius: 10px;
 
       }
       #bot{
         border: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
         background: rgba(169, 169, 169, 0.3);
         border-radius: 10px;
       }
